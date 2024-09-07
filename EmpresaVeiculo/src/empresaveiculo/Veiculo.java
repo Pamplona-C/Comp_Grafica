@@ -1,5 +1,4 @@
 package empresaveiculo;
-
 /**
  *
  * @author pamplona
@@ -14,12 +13,10 @@ public abstract class Veiculo {
         this.ano = ano;
     }
     
-    
     void exibirInfo(){
         System.out.println("Modelo: " + modelo+
                             "\nAno : "+ano);
     }
-    
     
     abstract double calculaConsumo(double distancia);
         
