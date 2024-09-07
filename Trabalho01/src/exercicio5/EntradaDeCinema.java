@@ -23,7 +23,7 @@ public class EntradaDeCinema {
         this.valor = valor;
     }
 
-    // Método que calcula desconto para menores de 12 anos
+
     public double calculaDesconto(LocalDate dataNascimento) {
         long idade = ChronoUnit.YEARS.between(dataNascimento, LocalDate.now());
         if (idade < 12) {
@@ -32,7 +32,7 @@ public class EntradaDeCinema {
         return valor;
     }
 
-    // Método que calcula desconto para estudantes
+  
     public double calculaDesconto(LocalDate dataNascimento, int carteiraEstudante) {
         long idade = ChronoUnit.YEARS.between(dataNascimento, LocalDate.now());
 
@@ -46,7 +46,7 @@ public class EntradaDeCinema {
         return valor;
     }
 
-    // Método que aplica desconto adicional para sessões antes das 16 horas
+    
     public double calculaDescontoHorario(double valorComDesconto) {
         if (horario.isBefore(LocalTime.of(16, 0))) {
             return valorComDesconto * 0.90; 
@@ -54,7 +54,7 @@ public class EntradaDeCinema {
         return valorComDesconto;
     }
 
-    // toString para exibir os detalhes do ingresso
+    
     @Override
     public String toString() {
         return "Entrada de Cinema\n" +
