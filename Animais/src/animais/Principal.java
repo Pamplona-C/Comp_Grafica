@@ -1,20 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package animais;
 
-/**
- *
- * @author pamplona
- */
 public class Principal {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        Animal animal = new Animal("Mila","Pincher","Bruno");
+        Animal animal = new Animal();
         Cachorro cachorro = new Cachorro("Farofa","Pitbull","Leticia",5);
         Animal gato = new Gato("Feijão","split","alemão",2);
         

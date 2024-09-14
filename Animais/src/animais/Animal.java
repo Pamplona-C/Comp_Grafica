@@ -51,6 +51,6 @@ public class Animal {
     }
     
     public void fazerSom(){
-        System.out.println(nomeAnimal + " Faz som");
+        System.out.println(nomeAnimal + "Faz som");
     }
 }
